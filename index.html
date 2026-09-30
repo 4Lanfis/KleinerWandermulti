@@ -300,12 +300,12 @@
                 inputMode: "text",
                 question: "Welche 2 großen Wörter findest du auf dem Schild?",
                 validAnswers: ["landhaus hanning", "landhaushanning"],
-                hint: "Schau auf das Hinweisschild am Wegesrand."
+                hint: "Schau auf das Schild am Wegesrand."
             },
             {
                 id: 7,
                 title: "Station 7",
-                subtitle: "Landhaus Hanning",
+                subtitle: "Strommast",
                 coords: "N 52° 00.202' E 007° 18.090'",
                 lat: 52.003367,
                 lng: 7.301500,
@@ -652,7 +652,7 @@
             html += `
                 <div class="p-2.5 rounded-xl border-2 ${isFinalUnlocked ? 'border-amber-400 bg-amber-50/50' : 'border-slate-100 bg-slate-50/50'} flex items-center justify-between text-xs font-bold">
                     <div>
-                        <div class="text-amber-800"><i class="fa-solid fa-box-archive"></i> FINALE CACHE</div>
+                        <div class="text-amber-800"><i class="fa-solid fa-box-archive"></i> FINALE</div>
                         <div class="text-[11px] font-mono ${isFinalUnlocked ? 'text-slate-900 font-black' : 'text-slate-400'}">${isFinalUnlocked ? FINAL_CACHE.coords : "N 52° XX.??? ' E 007° XX.??? '"}</div>
                     </div>
                     <div>
