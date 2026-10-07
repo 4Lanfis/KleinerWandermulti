@@ -383,7 +383,7 @@
             }
         ];
 
-        // OBFUSCATED FINAL CACHE DETAILS
+        
         const RAW_FINAL_CACHE = {
             _c: [27, 117, 96, 103, 229, 117, 101, 101, 123, 99, 101, 100, 114, 117, 16, 117, 101, 101, 98, 229, 117, 100, 109, 123, 101, 96, 96, 114],
             _lat: [96, 103, 123, 101, 100, 101, 101, 100, 98],
@@ -400,13 +400,14 @@
             lng: _unscrambleFloat(st._lng),
             validAnswers: st._a.map(ans => _unscramble(ans))
         }));
-
+        <!--  N 52° 00.738' E 007° 17.652' -->
         const FINAL_CACHE = {
             ...RAW_FINAL_CACHE,
             coords: _unscramble(RAW_FINAL_CACHE._c),
             lat: _unscrambleFloat(RAW_FINAL_CACHE._lat),
             lng: _unscrambleFloat(RAW_FINAL_CACHE._lng)
         };
+        
 
         let currentStationIndex = 0;
         let isSunlightMode = false;
